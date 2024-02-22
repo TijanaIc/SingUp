@@ -3,11 +3,12 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 namespace SchoolDemo;
 
-[Table("Login", Schema = "dbo")]
+[Table("Users", Schema = "dbo")]
 
-public class LoginRequest
+public class User
 {
     [Key]
-    public string Email { get; set; }
+    public int UserID { get; set; }
+    public string UserName { get; set; }
     public string Password { get; set; }
 }

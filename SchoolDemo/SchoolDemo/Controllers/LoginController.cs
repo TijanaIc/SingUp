@@ -14,9 +14,9 @@ public class LoginController : Controller
     }
 
     [HttpPost("")]
-    public IActionResult Login([FromBody] LoginRequest payload)
+    public IActionResult Login([FromBody] User payload)
     {
-        bool isUserValid = _service.LoginUser(payload.Email, payload.Password);
+        bool isUserValid = _service.LoginUser(payload.UserName, payload.Password);
         if (isUserValid)
         {
             return Ok();

@@ -3,7 +3,7 @@
 namespace SchoolDemo.DataBase;
 public class LoginDbContext : DbContext
 {
-    public virtual DbSet<LoginRequest> Login { get; set; }
+    public virtual DbSet<User> Users { get; set; }
     public LoginDbContext(DbContextOptions<LoginDbContext> options)
         : base(options)
     {

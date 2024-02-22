@@ -11,7 +11,7 @@ public class UserService : IUserService
     }
     public bool LoginUser(string email, string password)
     {
-        LoginRequest user = _loginDbContext.Login.FirstOrDefault(i => i.Email == email && i.Password == password);
+        User user = _loginDbContext.Users.FirstOrDefault(i => i.UserName == email && i.Password == password);
         return user != null;
     }
 }
