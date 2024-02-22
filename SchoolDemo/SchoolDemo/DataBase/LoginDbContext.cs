@@ -1,4 +1,5 @@
 ﻿using Microsoft.EntityFrameworkCore;
+
 namespace SchoolDemo.DataBase;
 public class LoginDbContext : DbContext
 {

@@ -1,7 +1,6 @@
 ﻿using SchoolDemo.DataBase;
 
 namespace SchoolDemo;
-
 public class UserService : IUserService
 {
     private readonly LoginDbContext _loginDbContext;
