@@ -4,7 +4,7 @@ public class MockUserService : IUserService
 {
     public bool LoginUser(string email, string password)
     {
-        return email == "tijana" && password == "123";
+        return email == "admin@example.com" && password == "admin123";
 
     }
 }
